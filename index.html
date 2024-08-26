@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body style="background-color: #f4f4f4; color: #333;">
 
-<header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" id="company-logo"> <!-- Amazon Logo -->
+<header style="background-color: #e0e0e0; color: #333; padding: 10px;">
+    <h1>Amazon</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" 
+         style="width: 150px; display: block; margin-left: auto; margin-right: auto;">
     <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul style="list-style-type: none; padding: 0; text-align: center;">
+            <li style="display: inline; margin: 0 10px;"><a href="#services" style="color: #333; text-decoration: none;">Services</a></li>
+            <li style="display: inline; margin: 0 10px;"><a href="#about" style="color: #333; text-decoration: none;">About Us</a></li>
+            <li style="display: inline; margin: 0 10px;"><a href="#contact" style="color: #333; text-decoration: none;">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
+<main style="background-color: #ffffff; padding: 20px;">
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item" style="margin-bottom: 20px;">
+            <img src="download (2).png" alt="Online Retail" style="width: 100px;">
+            <div>
+                <h3><a href="https://www.amazon.com" target="_blank">Online Retail</a></h3>
+                <p>Amazon offers a vast selection of products, ranging from electronics to groceries. Our user-friendly platform makes shopping easy and convenient, ensuring that you find exactly what you need with just a few clicks.</p>
+            </div>
+        </div>
+        <div class="service-item" style="margin-bottom: 20px;">
+            <img src="download.png" alt="Amazon Prime Membership" style="width: 100px;">
+            <div>
+                <h3><a href="https://www.amazon.com/amazonprime" target="_blank">Amazon Prime Membership</a></h3>
+                <p>Join Amazon Prime to enjoy exclusive benefits, including free two-day shipping on millions of items, access to thousands of movies and TV shows with Prime Video, and ad-free music streaming with Prime Music.</p>
+            </div>
+        </div>
+        <div class="service-item" style="margin-bottom: 20px;">
+            <img src="download (1).png" alt="Amazon Web Services" style="width: 100px;">
+            <div>
+                <h3><a href="https://aws.amazon.com" target="_blank">Amazon Web Services (AWS)</a></h3>
+                <p>AWS provides reliable, scalable, and low-cost cloud computing services. Whether you are a startup or an enterprise, our cloud solutions help you innovate faster and reduce IT costs.</p>
+            </div>
+        </div>
+        <div class="service-item" style="margin-bottom: 20px;">
+            <img src="download (3).png" alt="Kindle eBooks and Devices" style="width: 100px;">
+            <div>
+                <h3><a href="https://www.amazon.com/kindle-dbs/hz/signup" target="_blank">Kindle eBooks and Devices</a></h3>
+                <p>With Kindle, you can access a vast library of eBooks and enjoy reading anytime, anywhere. Our Kindle devices are designed for readers, offering a comfortable and immersive reading experience.</p>
+            </div>
+        </div>
+        <div class="service-item" style="margin-bottom: 20px;">
+            <img src="download (4).png" alt="Amazon Music and Video Streaming" style="width: 100px;">
+            <div>
+                <h3><a href="https://music.amazon.com" target="_blank">Amazon Music and Video Streaming</a></h3>
+                <p>Discover a wide range of streaming options with Amazon, including millions of songs, playlists, and original content. Enjoy your favorite music and movies with ease and convenience.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="about">
         <h2>About Us</h2>
         <audio controls>
-            <source src="introduction.mp3" type="audio/mpeg"> <!-- Replace with the actual audio file path -->
+            <source src="introduction (1).mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <audio src="introduction.mp3"> </audio>
-        <p>Amazon is a global leader in e-commerce and cloud computing, committed to providing customers with a vast selection of products and services.</p>
+        <p>Amazon is a global leader in e-commerce and cloud computing, committed to providing customers with a vast selection of products and services. Our mission is to be Earth's most customer-centric company, where customers can find and discover anything they might want to buy online.</p>
         
         <table>
             <caption>Company Details</caption>
@@ -35,55 +75,30 @@
                 <th>Address</th>
                 <td>410 Terry Ave N, Seattle, WA 98109, USA</td>
             </tr>
-            <tr>
-                <th>Contact</th>
-                <td>(206) 266-1000</td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td><a href="mailto:info@amazon.com">info@amazon.com</a></td>
-            </tr>
         </table>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Online Retail</li>
-            <li>Amazon Prime Membership</li>
-            <li>Amazon Web Services (AWS)</li>
-            <li>Kindle eBooks and Devices</li>
-            <li>Amazon Music and Video Streaming</li>
-        </ul>
     </section>
 
     <section id="promotions">
         <h2>Promotional Video</h2>
         <video controls width="600">
-            <source src="promotional-video.mp4" type="video/mp4"> <!-- Replace with the actual video file path -->
+            <source src="promotional-video (1).mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out to us through the following channels:</p>
-        <address>
-            <p><strong>Address:</strong> 410 Terry Ave N, Seattle, WA 98109, USA</p>
-            <p><strong>Phone:</strong> (206) 266-1000</p>
-            <p><strong>Email:</strong> <a href="mailto:info@amazon.com">info@amazon.com</a></p>
-        </address>
-        <p>Follow us on social media:</p>
-        <ul>
-            <li><a href="https://facebook.com/amazon" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/amazon" target="_blank">Twitter</a></li>
-            <li><a href="https://instagram.com/amazon" target="_blank">Instagram</a></li>
-            <li><a href="https://linkedin.com/company/amazon" target="_blank">LinkedIn</a></li>
-        </ul>
-    </section>
 </main>
 
-<footer>
+<footer style="background-color: #e0e0e0; color: #333; padding: 10px; text-align: center;">
+    <h2>Contact Us</h2>
+    <p>For inquiries, please contact us:</p>
+    <p>Phone: (206) 266-1000</p>
+    <p>Email: <a href="mailto:info@amazon.com" style="color: #333; text-decoration: none;">info@amazon.com</a></p>
+    <p>Follow us on social media:</p>
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="display: inline; margin: 0 10px;"><a href="https://facebook.com/amazon" target="_blank" style="color: #333; text-decoration: none;">Facebook</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="https://twitter.com/amazon" target="_blank" style="color: #333; text-decoration: none;">Twitter</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="https://instagram.com/amazon" target="_blank" style="color: #333; text-decoration: none;">Instagram</a></li>
+        <li style="display: inline; margin: 0 10px;"><a href="https://linkedin.com/company/amazon" target="_blank" style="color: #333; text-decoration: none;">LinkedIn</a></li>
+    </ul>
     <p>&copy; 2024 Amazon. All rights reserved.</p>
 </footer>
 
